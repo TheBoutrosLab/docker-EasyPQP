@@ -24,8 +24,6 @@ ENV CONDA_ENV_PATH="${CONDA_ENV_PATH}" \
 RUN groupadd -g 500001 bldocker && \
     useradd -r -u 500001 -g bldocker bldocker
 
-RUN easypqp --help > /dev/null
-
 USER bldocker
 
 LABEL maintainer="Your Name <YourName@sbpdiscovery.org>" \
