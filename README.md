@@ -9,6 +9,7 @@ This image is maintained by the Boutros Lab and installs EasyPQP in a dedicated 
 | Component | Version |
 |-----------|---------|
 | EasyPQP | 0.1.59 |
+| pyOpenMS | 3.4.0 |
 | Miniforge | 26.1.1-2 |
 | Ubuntu | 24.04 |
 

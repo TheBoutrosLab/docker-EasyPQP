@@ -6,10 +6,12 @@ FROM condaforge/miniforge3:${MINIFORGE_VERSION} AS builder
 
 ARG CONDA_ENV_PATH
 ARG EASYPQP_VERSION=0.1.59
+# EasyPQP 0.1.59 requires pyOpenMS 3.4.0 for idXML conversion.
+ARG PYOPENMS_VERSION=3.4.0
 
 RUN mamba create -qy -p "${CONDA_ENV_PATH}" \
     -c conda-forge -c bioconda \
-    "easypqp=${EASYPQP_VERSION}" && \
+    "easypqp=${EASYPQP_VERSION}" "pyopenms=${PYOPENMS_VERSION}" && \
     mamba clean -afy
 
 FROM ubuntu:${UBUNTU_VERSION} AS final
