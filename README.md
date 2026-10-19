@@ -1,53 +1,41 @@
-# docker-tool_name
-Template Repository for the Boutros Lab Dockerfiles based on mambaforge base image.
+# docker-EasyPQP
 
-The base image is pulled from https://hub.docker.com/r/condaforge/mambaforge
+Docker image for [EasyPQP](https://github.com/grosenberger/easypqp), a tool for generating peptide query parameters and spectral libraries for OpenSWATH.
 
-# Documentation
-Docker introduction [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3190419/Docker+Introduction)
+This image is maintained by the Boutros Lab and installs EasyPQP in a dedicated Miniforge/Conda environment on an Ubuntu runtime image.
 
-Dockerfile Best Practices [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3189770/Dockerfile+Best+Practices)
+## Version
 
-Docker image versioning standard [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3188472/Docker+image+versioning+standardization)
-
-
-# Version
-| Tool | Version |
-|------|---------|
-|tool_name| X.X.X|
-|tool_name_2|X.X.X|
-
----
+| Component | Version |
+|-----------|---------|
+| EasyPQP | 0.1.59 |
+| Miniforge | 26.1.1-2 |
+| Ubuntu | 24.04 |
 
 ## Discussions
 
-- [Issue tracker](<link-to-issues-page>) to report errors and enhancement ideas.
-- Discussions can take place in [docker-<tool> Discussions](<link-to-discussions>)
-- [docker-<tool> pull requests](<link-to-pull-requests>) are also open for discussion
-
----
+- [Issue tracker](https://github.com/TheBoutrosLab/docker-EasyPQP/issues) to report errors and enhancement ideas.
+- Discussions can take place in [docker-EasyPQP Discussions](https://github.com/TheBoutrosLab/docker-EasyPQP/discussions).
+- [docker-EasyPQP pull requests](https://github.com/TheBoutrosLab/docker-EasyPQP/pulls) are also open for discussion.
 
 ## Contributors
 
-Please see list of [Contributors](<link-to-contributors-insights>) at GitHub.
-
----
+Please see the list of [Contributors](https://github.com/TheBoutrosLab/docker-EasyPQP/graphs/contributors) at GitHub.
 
 ## References
 
-1. Tool specific references can be listed here
-
----
+1. EasyPQP project documentation: <https://github.com/grosenberger/easypqp>
+2. Bioconda package index: <https://bioconda.github.io/recipes/easypqp/README.html>
 
 ## License
 
-Author: Name1, Name2
+Author: Chenghao Zhu
 
-[docker repo name] is licensed under the GNU General Public License version 2. See the file LICENSE for the terms of the GNU GPL license.
+docker-EasyPQP is licensed under the GNU General Public License version 2. See the file [LICENSE](LICENSE) for the terms of the GNU GPL license.
 
-<one line to give the program's name and a brief idea of what it does.>
+docker-EasyPQP provides a containerized EasyPQP runtime for spectral library generation. Bundled software retains its respective upstream license.
 
-Copyright (C) 2026 Sanford Burnham Prebys Medical Discovery Institute ("Boutros Lab")
+Copyright (C) 2026 Sanford Burnham Prebys Medical Discovery Institute ("Boutros Lab") All rights reserved.
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
